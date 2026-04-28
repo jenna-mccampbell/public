@@ -24,8 +24,13 @@ submodule openconfig-network-instance-l2 {
     Layer 2 network instance configuration and operational state
     parameters.";
 
+  oc-ext:openconfig-version "4.7.0";
 
-  oc-ext:openconfig-version "4.6.0";
+  revision "2026-03-31" {
+    description
+      "Add enable-aigp to BGP address families in neighbors and peer-groups.";
+    reference "4.7.0";
+  }
 
   revision "2025-03-26" {
     description
